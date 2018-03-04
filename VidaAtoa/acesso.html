@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="_css/acesso.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script>
+function calc(){
+  var preco = parseInt(document.getElementById('cpreco').value);
+  document.getElementById('resultado').innerHTML = preco * 0.032;
+
+}
+</script>
+
+    </head>
+    <body>
+
+        <form name="formulario" id="form">
+          <div class="grupo-form">
+            <label for="nnome">Nome: </label>
+          <input type="text" name="nnome" id="cnome" placeholder="Nome Completo" class="form-control"/></br>
+          <label for="ccpf">CPF: </label>
+          <input type="number" name="ncpf" id="cpf" placeholder="CPF" class="form-control"/></br>
+          <label for="ndata">Data Nascimento</label>
+          <input type="date" name="ndata" id="cdata" class="form-control"/></br>
+          <label for="ncpf">CEP</label>
+          <input type="number" name="ncep" id="ccep" placeholder="Apenas os números" class="form-control"/></br>
+          <label for="nbike">Modelo Bike</label>
+          <input type="text" name="nbike" id="cbike" placeholder="Ex: Caloi Elite team " class="form-control"/></br>
+          <input type="number" name="nanobike" id="canobike" placeholder="Ano d bike" class="form-control"/></br>
+          <label for="npreco">Preço</label>
+          <input type="number" name="npreco" id="cpreco" placeholder="Valor de Mercado" onblur="calc()" class="form-control"/></br>
+          <label id="resultado"></label></br>
+
+
+          <button type="submit" class="btn btn-primary btn-lg">Confirmar</button>
+        </div>
+        </form>
+
+        <a href="http://www.ceee.com.br/pportal/ceee/Component/Controller.aspx?CC=1221" target="_blank" class="btn btn-primary btn-lg">Simular</a>
+
+
+
+    </body>
+</html>

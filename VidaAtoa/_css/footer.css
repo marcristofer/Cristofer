@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+footer#rodape {
+  clear: both;
+  border-top: 1px solid #777;
+}
+footer#rodape p{
+  text-align: center;
+  color: #777;
+}

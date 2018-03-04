@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <title>Usuario</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="_css/footer.css"/>
+  <link rel="icon" href="_imagens/vidadeatoa_icone.png"/>
+</head>
+<body>
+  <!-- Barra de menu lateral e configurada-->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="_imagens/marcelo01_peq.jpg" style="width:45%;" class="w3-round"><br><br>
+
+      <p class="w3-text-grey">Marcelo Cristofer</p>
+    </div>
+
+    <div class="w3-panel w3-large">
+      <a href="https://www.facebook.com/marcelo.cristofer.3" target="_blank" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/mar.cristofer/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/marcelo-cristofer-35973a107/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <a href="index.html" class="fa fa-arrow-circle-left fa-fw w3-margin-right">Voltar</a>
+  </nav>
+
+
+<!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Contenção de Pagina -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Cabeçalho -->
+  <header>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Vida de Atoa</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filtros:</span>
+      <button class="w3-button w3-black" onclick="ocultar()">Todos</button>
+      <button class="w3-button w3-black"><i class="fa fa-map-pin w3-margin-right"></i>Artigos</button>
+      <button class="w3-button w3-black w3-hide-small"><i class="fa fa-diamond w3-margin-right" onclick="mostrar()"></i>Escrever</button>
+
+    </div>
+    </div>
+  </header>
+
+  <!--Primeira linha de 3 grids-->
+ <div class="w3-row-padding">
+   <div class="w3-third w3-container w3-margin-bottom">
+     <div class="w3-container w3-white">
+       <p><b>Título</b></p>
+       <p>Subtitulo.</p>
+     </div>
+   </div>
+
+   <div class="w3-third w3-container w3-margin-bottom">
+     <div class="w3-container w3-white">
+       <p><b>Título</b></p>
+       <p>Subtitulo.</p>
+     </div>
+   </div>
+
+   <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+       <p><b>Título</b></p>
+       <p>Subtitulo</p>
+     </div>
+   </div>
+ </div>
+ </div>
+
+<footer id="rodape">
+  <p>Copyrigth&copy; Marcelo Cristofer</p>
+  <p><a href="https://www.w3schools.com/" target="_blank">Layout w3.CSS</a></p>
+</footer>
+
+
+   <script>
+   // Script to open and close sidebar
+   function w3_open() {
+       document.getElementById("mySidebar").style.display = "block";
+       document.getElementById("myOverlay").style.display = "block";
+   }
+
+   function w3_close() {
+       document.getElementById("mySidebar").style.display = "none";
+       document.getElementById("myOverlay").style.display = "none";
+   }
+   function mostrar(){
+     document.getElementById("1").style.display="none";
+     document.getElementById("2").style.display="none";
+   }
+   function ocultar() {
+     document.getElementById("1").style.display="block";
+     document.getElementById("2").style.display="block";
+   }
+   </script>
+
+</body>
+</html>
