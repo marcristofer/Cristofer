@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Vida de Atoa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="_imagens/vidadeatoa_icone.png">
+<link rel="stylesheet" type="text/css" href="_css/footer.css"/>
+<link rel="stylesheet" type="text/css" href="_css/index.css"/>
+
+<style>
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('_imagens/marcelo02.JPG');
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url('_imagens/matriz.jpg');
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#inicio" class="w3-bar-item w3-button">Inicio</a>
+        <a href="#sobre" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Sobre</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfólio</a>
+        <a href="#contato" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contato</a>
+        <a href="acesso.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-key"></i> Login</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#sobre" class="w3-bar-item w3-button" onclick="toggleFunction()">Sobre</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfólio</a>
+        <a href="#contato" class="w3-bar-item w3-button" onclick="toggleFunction()">Contato</a>
+        <a href="acesso.html" class="w3-bar-item w3-button">Login</a>
+    </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="inicio">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Vida de Atoa</span>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="sobre">
+    <h3 class="w3-center">Sobre</h3>
+    <p class="w3-center"><em>Eu amo Tecnologia</em></p>
+    <p>Devido à dificuldade de conseguir estágios na área de tecnologia, resolvi criar minha própria página web para poder compartilhar todos os meus trabalhos de faculdade e outros conhecimentos de várias áreas que estou tenho o prazer de conhecer, auxiliando aqueles que pretendem ingressar no ensino superior sobre os conhecimentos que cada área tem a fornecer.</p>
+
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <p><b><i class="fa fa-user w3-margin-right"></i>Marcelo Cristofer</b></p><br>
+            <figure class="foto-legenda"><img src="_imagens/marcelo01.jpg" class="w3-round w3-image w3-border w3-padding" alt="Photo of Me"  width="500" height="333";>
+              <figcaption>Vida de Atoa</figcaption
+            </figure>
+        </div>
+
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <p class=w3-center>Apresentação</p></br><p>Olá, eu sou Marcelo Cristofer Fernandes nascido em Mateus Leme no natal de 1991, estudante de Ciências da Computação na Faculdade Pitágoras, amante de tecnologia, música e clássicos da literatura nacional e histórias fictícias fantásticas.</br></br> Elves, Fairies and Dwarves &hearts;</p>
+          </br></br></br><p class="t">“Muitos que vivem merecem a morte. E alguns que morrem merecem viver. Você pode dar-lhes vida? Então não seja tão ávido para julgar e condenar alguém à morte. Pois mesmo os muito sábios não conseguem ver os dois lados.” </br>J.R.R.TOLKIEN, Senhor dos Anéis – A Sociedade do Anel. São Paulo:Martins Fontes, 2001.<p>
+        </div>
+    </div>
+    <!-- Esta parte é apenas rascunho
+    <p class="w3-large w3-center w3-padding-16">Estou bem em:</p>
+    <p class="w3-wide"><i class="fa fa-user-plus"></i>Relacionamento</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+    </div>
+
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+    </div>
+
+    <p class="w3-wide"><i class="fa fa-university"></i>Banco de Dados</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:30%">30%</div>
+    </div>
+
+    <p class="w3-wide"><i class="fa fa-photo"></i>Edição</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:25%">25%</div>
+    </div>
+  -->
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">0</span><br>
+        Parceiros
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2</span><br>
+        Projetos Executados
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10</span><br>
+        Porcentagem Completada
+    </div>
+	<div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4</span><br>
+        Dias de Trabalho
+    </div>
+</div>
+
+<iframe class="frame-spec" width="580px" height="650px" frameborder="0" style="border:0" allowfullscreem src="acesso.html" name="formulario" id="form"></iframe>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">Meu Trabalho</h3>
+    <p class="w3-center">Quando iniciei o curso de Ciências da Computação eu não sabia de nada sobre o que fazia ou em que atuava, sequer da importância da tecnologia no cotidiano das pessoas, simplesmente fui lá e escolhi algo que era da área de exatas e que coubesse no bolso. Conforme o tempo passou, não apenas me interessei pela área, mas também me apaixonei pelo que faço e mesmo com bastante dificuldade sempre estou buscando me aprofundar no que a área de tecnologia pode oferecer.
+</br>Contudo, estou em processo de desenvolvimento de um portal, onde as pessoas que desejarem participar terão um espaço reservado para compartilhar seus artigos e orientações para aqueles que desejam conhecimento.
+</br>Espero que todo esse processo de aprendizado me auxilie no trabalho de conclusão de curso e nos próximos trabalhos que tiver ao longo de minha carreira profissional da área de tecnologia.
+</p>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">Contato</span>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contato">
+    <h3 class="w3-center">Onde eu Trabalho</h3>
+    <p class="w3-center"><em>Vou adorar seu feedback!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+            <!-- Add Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14997.833659535012!2d-44.43263688154681!3d-19.989266085127166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa728714bb9605d%3A0x5cb21d84aaabdc76!2sCentro%2C+Mateus+Leme+-+MG!5e0!3m2!1spt-BR!2sbr!4v1497468053290"
+        width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mateus Leme, MG<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefone: (31)99562-1376<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: celaomd2@gmail.com<br>
+            </div>
+
+            <form action="Post.php" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button class="w3-button w3-black w3-right w3-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> Envie Mensagem
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="rodape" class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#inicio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Voltar ao Topo</a>
+    <div class="w3-xlarge w3-section">
+        <a href="https://www.facebook.com/marcelo.cristofer.3" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/mar.cristofer/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/marcelo-cristofer-35973a107/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <p>Copyrigth&copy; Marcelo Cristofer</p>
+    <a href="https://www.w3schools.com/" target="_blank">Layout w3.CSS</a>
+
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>
